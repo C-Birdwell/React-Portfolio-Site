@@ -1,10 +1,26 @@
+@import "settings";
+
 html {
   font-size: 62.5%;
 }
 
 body {
+  flex: 1;
+  flex-direction: column;
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
+  //background-color: $color-background;
+  background: linear-gradient(45deg, darken($color-background, 20%) 25%, $color-background 50%, lighten($color-background, 20%) 100%);
+  background-size: 'cover';
+  & * {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+}
+
+.content-container{
+  flex: 9;
 }
 
 button {

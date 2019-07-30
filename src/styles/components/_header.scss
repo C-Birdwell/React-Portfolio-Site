@@ -1,4 +1,11 @@
-header{
+.header-container{
   flex: 1;
-  
+
+}
+header {
+  flex: 1;
+  & img {
+    flex: none;
+    width: 5%;
+  }
 }
