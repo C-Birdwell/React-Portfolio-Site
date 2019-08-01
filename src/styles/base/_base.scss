@@ -2,6 +2,8 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -9,9 +11,10 @@ body {
   flex-direction: column;
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
-  //background-color: $color-background;
-  background: linear-gradient(45deg, darken($color-background, 20%) 25%, $color-background 50%, lighten($color-background, 20%) 100%);
+  background-color: $color-background;
+  background: linear-gradient(45deg, darken($color-background, 50%) 0%, $color-background 25%, lighten($color-background, 50%) 100%);
   background-size: 'cover';
+  padding: 0 5%;
   & * {
     display: flex;
     flex: 1;
