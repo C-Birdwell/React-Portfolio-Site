@@ -1,11 +1,34 @@
+@import "./base/settings";
+
+
 .header-container{
   flex: 1;
-
+  padding-top: 2.5vh
 }
 header {
   flex: 1;
-  & img {
+  // & img {
+  //   flex: none;
+  //   width: 100%;
+  // }
+  & i {
+    font-size: $size-logo;
+    display: block;
+    text-align: center;
+    flex:0;
+  }
+  & h1 {
+    font-family: Monoton,cursive;
+    font-weight: 300;
+    color: #F17;
+    font-size: $xl-size;
+    margin: 0;
+  & span {
+    display: block;
     flex: none;
-    width: 5%;
+    &:nth-child(1){
+      font-size: $xl-size * 1.37;
+    }
+  }
   }
 }
