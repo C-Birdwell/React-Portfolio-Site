@@ -7,9 +7,12 @@ import EditExpensePage from "../components/EditExpensePage";
 import HelpPage from "../components/HelpPage";
 import NotFoundPage from "../components/NotFoundPage";
 import Header from "../components/Header";
+import AnimatedBackground from "../components/AnimatedBackground";
+
 
 const AppRouter = () => (
   <BrowserRouter>
+    <AnimatedBackground />
     <div>
       <div className="header-container">
         <Header />

@@ -1,10 +1,8 @@
-
-
 .row{
   flex-direction: row;
 }
 
-@for $i from 1 through 10 {
+@for $i from 1 through 100 {
   .col-#{$i}{
     flex: $i;
   }

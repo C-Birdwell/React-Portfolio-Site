@@ -12,7 +12,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
   background-color: $color-background;
-  background: linear-gradient(45deg, darken($color-background, 75%) 0%, lighten($color-background, 25%) 100%);
+  //background: linear-gradient(45deg, darken($color-background, 75%) 0%, lighten($color-background, 25%) 100%);
   background-size: 'cover';
   padding: 0 2.5%;
   & * {

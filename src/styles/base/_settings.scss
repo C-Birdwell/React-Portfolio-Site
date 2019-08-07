@@ -1,6 +1,7 @@
 // Colors
 $color-background: #242424;
-
+$color-main: #FF1177;
+$color-sub: #1b03a3;
 
 // Spacing
 $s-size: 1.2rem;
@@ -39,5 +40,5 @@ $desktop-breakpoint: 45rem;
 
 .icon-logo:before {
   content: "\e900";
-  color: #f17;
+  color: $color-main;
 }
