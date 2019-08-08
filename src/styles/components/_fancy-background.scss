@@ -23,6 +23,6 @@
       background: linear-gradient(45deg, darken($color-background, 75%) 0%, lighten($color-background, 25%) 100%);
       background-size: cover;
       background-position: center;
-      background-attachment: static;
+      background-attachment: fixed;
     }
   }
