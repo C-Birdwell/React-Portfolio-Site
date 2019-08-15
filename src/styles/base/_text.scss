@@ -1,0 +1,17 @@
+@import 'settings';
+
+h1 {
+  font-family: Monoton, cursive;
+  font-weight: 300;
+  color: $color-main;
+  font-size: $xl-size;
+  margin: 0;
+  justify-content: center;
+  & span {
+    display: block;
+    flex: none;
+    &:nth-child(1) {
+      font-size: $xl-size * 1.37;
+    }
+  }
+}
