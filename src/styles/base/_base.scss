@@ -6,24 +6,40 @@ html {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  &:-webkit-any-link {
+    color: initial;
+  }
+}
+
+p {
+  color: #fff;
+}
+
 body {
   flex: 1;
   flex-direction: column;
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
-  background-color: $color-background;
-  //background: linear-gradient(45deg, darken($color-background, 75%) 0%, lighten($color-background, 25%) 100%);
-  background-size: 'cover';
-  padding: 0 2.5%;
+  height: 100%;
+  width: 100%;
   & * {
     display: flex;
     flex: 1;
     flex-direction: column;
+    box-sizing: border-box;
+
   }
 }
 
+#app{
+  height: 100%;
+}
+
 .content-container{
-  flex: 9;
+  flex: 8;
+  overflow: hidden;
 }
 
 button {

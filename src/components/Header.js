@@ -1,39 +1,78 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Anime from 'react-anime';
+import ReactSVG from 'react-svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUserTie,  faSatelliteDish, faClipboardList } from '@fortawesome/free-solid-svg-icons'
 
-const renderName = () => (
-  <h1>
-    <span>Web By</span>
-    <span>Birdwell</span>
-  </h1>
-)
+export default class Header extends React.Component {
 
-const renderLogo = () => (
-  <div className="row">
-      <div className="col-1 center">
-        <i className="icon-logo"></i>
-      </div>
+  renderName(){
+
+    const animeProps = {
+      opacity: [0, 1, 0.5],
+      scale: [0.5, 1.25, 1],
+      translateY: [-500, 0],
+      duration: 1250,
+      easing: 'linear',
+    }
+
+    return(
+        <h1>
+          <Anime {...animeProps} delay={100}>   
+            <span>Web By</span>
+          </Anime>
+          <Anime {...animeProps}> 
+            <span>Birdwell</span>
+          </Anime>
+        </h1>
+    )
+  }
+
+  renderLogo(){ 
+    return(
+      <div className="row">
+        <div className="col-1 center">
+          <ReactSVG src="/assets/images/logo.svg" />
+        </div>
         <div className="col-4">
-          {renderName()}
+          <NavLink to="/" activeClassName="active" exact={true}>
+            {this.renderName()}
+          </NavLink>
         </div>
       </div>
-)
+    )
+  }
 
-const Header = () => (
-  <header>
-    <div className="row">
-    <div className="col-1">
-        {renderLogo()}
-    </div>
-    <div className="col-2">
-      <NavLink to="/" activeClassName="is-active" exact={true}>Dashboard</NavLink>
-      <NavLink to="/create" activeClassName="is-active">Create Expense</NavLink>
-    </div>
-    </div>
-    
-    
-    
-  </header>
-);
 
-export default Header;
+  render() {
+    return (
+      <header>
+        <div className="row">
+          <div className="col-1">
+              {this.renderLogo()}
+          </div>
+          <div className="col-2">
+            <div className="row">
+              <div className="col-1">
+                <NavLink to="/" activeClassName="active" exact={true}>
+                  <FontAwesomeIcon icon={ faSatelliteDish} className="nav-icon" />
+                </NavLink>
+              </div>
+              <div className="col-1">
+                <NavLink to="/summary" activeClassName="active">
+                  <FontAwesomeIcon icon={faUserTie} className="nav-icon" />
+                </NavLink>
+              </div>
+              <div className="col-1">
+                <NavLink to="/create" activeClassName="active">
+                  <FontAwesomeIcon icon={faClipboardList} className="nav-icon" />
+                </NavLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    );
+  }
+};

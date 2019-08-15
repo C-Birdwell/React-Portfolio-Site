@@ -1,33 +1,20 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Anime from 'react-anime';
-import { duration } from 'moment';
+import Fade from 'react-reveal/Fade';
 
 
 export class DashboardPage extends React.Component {
   render() {
-
-    const animeProps = {
-      opacity: [0, 1],
-      translateY: [250, 0],
-      //delay: 250,
-      duration: 1250,
-      elasticity: 2.5,
-      easing: 'easeInElastic'
-    }
-
     return (
-      <Anime {...animeProps}
+      <Fade 
+        bottom 
+        //delay={750} 
+        duration={1250}
       >
-      <p>Blog Post</p>
-      <p>Blog Post</p>
-
-      <section>
-        <p>Upon this, Daggoo, with either hand upon the gunwale to steady his way, swiftly slid aft, and then erecting himself volunteered his lofty shoulders for a pedestal.</p>
-        <p>"Good a mast-head as any, sir. Will you mount?"</p>
-        <p>"That I will, and thank ye very much, my fine fellow; only I wish you fifty feet taller."</p>
-      </section>
-      </Anime>
+        <div className="screen-content">
+          <p>7135424597</p>
+        </div>
+      </Fade>
     );
   }
 };

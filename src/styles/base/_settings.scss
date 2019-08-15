@@ -11,6 +11,13 @@ $xl-size: 4.8rem;
 $size-logo: 11rem;
 $desktop-breakpoint: 45rem;
 
+.small-p{
+  font-size: $s-size;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  align-self: center;
+}
 // Logo
 @font-face {
   font-family: 'icomoon';
