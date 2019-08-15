@@ -13,9 +13,10 @@ module.exports = (env) => {
     },
     module: {
       rules: [{
-        loader: 'babel-loader',
+        //loader: 'babel-loader',
         test: /\.js$/,
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        use: ["babel-loader", "eslint-loader"] 
       }, {
         test: /\.s?css$/,
         use: CSSExtract.extract({

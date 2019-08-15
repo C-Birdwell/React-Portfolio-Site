@@ -1,4 +1,4 @@
-@import "settings";
+@import 'settings';
 
 html {
   font-size: 62.5%;
@@ -25,17 +25,16 @@ body {
     flex: 1;
     flex-direction: column;
     box-sizing: border-box;
-
   }
 }
 
 p {
   color: #fff;
   font-family: Roboto;
-  flex: 0
+  flex: 0;
 }
 
-.small-p{
+.small-p {
   font-size: $s-size;
   color: #fff;
   text-align: center;
@@ -46,14 +45,14 @@ p {
 h2 {
   color: $color-sub;
   font-family: Montserrat;
-  flex: 0
+  flex: 0;
 }
 
-#app{
+#app {
   height: 100vh;
 }
 
-.content-container{
+.content-container {
   flex: 8;
   overflow: hidden;
 }

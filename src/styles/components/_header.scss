@@ -1,7 +1,6 @@
-@import "./base/settings";
+@import './base/settings';
 
-
-.header-container{
+.header-container {
   position: fixed;
   width: 100%;
   z-index: 200;
@@ -13,22 +12,7 @@ header {
     font-size: $size-logo;
     display: block;
     text-align: center;
-    flex:0;
-  }
-  & h1 {
-    font-family: Monoton,cursive;
-    font-weight: 300;
-    color: #F17;
-    font-size: $xl-size;
-    margin: 0;
-    justify-content: center;
-  & span {
-    display: block;
-    flex: none;
-    &:nth-child(1){
-      font-size: $xl-size * 1.37;
-    }
-  }
+    flex: 0;
   }
 }
 

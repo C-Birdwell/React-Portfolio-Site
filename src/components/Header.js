@@ -1,14 +1,17 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import Anime from 'react-anime';
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import Anime from 'react-anime'
 import ReactSVG from 'react-svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faUserTie, faSatelliteDish, faClipboardList } from '@fortawesome/free-solid-svg-icons'
+import {
+  faUser,
+  faUserTie,
+  faSatelliteDish,
+  faClipboardList,
+} from '@fortawesome/free-solid-svg-icons'
 
 export default class Header extends React.Component {
-
-  renderName(){
-
+  renderName() {
     const animeProps = {
       opacity: [0, 1, 0.5],
       scale: [0.5, 1.25, 1],
@@ -17,20 +20,20 @@ export default class Header extends React.Component {
       easing: 'linear',
     }
 
-    return(
-        <h1>
-          <Anime {...animeProps} delay={100}>   
-            <span>Web By</span>
-          </Anime>
-          <Anime {...animeProps}> 
-            <span>Birdwell</span>
-          </Anime>
-        </h1>
+    return (
+      <h1>
+        <Anime {...animeProps} delay={100}>
+          <span>Web By</span>
+        </Anime>
+        <Anime {...animeProps}>
+          <span>Birdwell</span>
+        </Anime>
+      </h1>
     )
   }
 
-  renderLogo(){ 
-    return(
+  renderLogo() {
+    return (
       <div className="row">
         <div className="col-1 center">
           <ReactSVG src="/assets/images/logo.svg" />
@@ -44,19 +47,21 @@ export default class Header extends React.Component {
     )
   }
 
-
   render() {
     return (
       <header>
         <div className="row">
-          <div className="col-1">
-              {this.renderLogo()}
-          </div>
+          <div className="col-1">{this.renderLogo()}</div>
           <div className="col-2">
             <div className="row">
               <div className="col-1">
-                <NavLink to="/" activeClassName="active" exact={true}>
-                    <FontAwesomeIcon icon={faSatelliteDish} className="nav-icon" />
+                <NavLink
+                  to="/"
+                  activeClassName="active"
+                  exact={true}
+                  onClick={() => console.log('hello')}
+                >
+                  <FontAwesomeIcon icon={faSatelliteDish} className="nav-icon" />
                 </NavLink>
               </div>
               <div className="col-1">
@@ -78,6 +83,6 @@ export default class Header extends React.Component {
           </div>
         </div>
       </header>
-    );
+    )
   }
-};
+}
