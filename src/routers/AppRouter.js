@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom'
 import DashboardPage from '../screens/DashboardPage'
 import SummaryPage from '../screens/SummaryPage'
 import EmploymentPage from '../screens/EmploymentPage'
+import SkillsPage from '../screens/SkillsPage'
 
-import ExpenseDashboardPage from '../components/ExpenseDashboardPage'
 import AddExpensePage from '../components/AddExpensePage'
 import EditExpensePage from '../components/EditExpensePage'
 import HelpPage from '../components/HelpPage'
@@ -24,8 +24,7 @@ const AppRouter = () => (
         <Route path="/" component={DashboardPage} exact={true} />
         <Route path="/summary" component={SummaryPage} />
         <Route path="/history" component={EmploymentPage} />
-        <Route path="/create" component={AddExpensePage} />
-        <Route path="/edit/:id" component={EditExpensePage} />
+        <Route path="/skills" component={SkillsPage} />
         <Route path="/help" component={HelpPage} />
         <Route component={NotFoundPage} />
       </Switch>

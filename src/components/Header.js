@@ -7,7 +7,7 @@ import {
   faUser,
   faUserTie,
   faSatelliteDish,
-  faClipboardList,
+  faClipboardList
 } from '@fortawesome/free-solid-svg-icons'
 
 export default class Header extends React.Component {
@@ -17,7 +17,7 @@ export default class Header extends React.Component {
       scale: [0.5, 1.25, 1],
       translateY: [-500, 0],
       duration: 1250,
-      easing: 'linear',
+      easing: 'linear'
     }
 
     return (
@@ -75,7 +75,7 @@ export default class Header extends React.Component {
                 </NavLink>
               </div>
               <div className="col-1">
-                <NavLink to="/history" activeClassName="active">
+                <NavLink to="/skills" activeClassName="active">
                   <FontAwesomeIcon icon={faClipboardList} className="nav-icon" />
                 </NavLink>
               </div>
