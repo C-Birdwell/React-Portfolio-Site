@@ -2,8 +2,9 @@
 
 
 .header-container{
-  flex: 2;
-  padding-top: 2.5vh
+  position: fixed;
+  width: 100%;
+  z-index: 200;
 }
 header {
   flex: 1;
@@ -35,4 +36,12 @@ header {
   width: 100%;
   max-width: 75px;
   align-self: center;
+  & path {
+    fill: $color-main;
+    opacity: 0.5;
+  }
+}
+
+.active .svg-inline--fa.nav-icon path {
+  opacity: 1;
 }

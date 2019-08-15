@@ -1,7 +1,7 @@
 // Colors
 $color-background: #242424;
 $color-main: #FF1177;
-$color-sub: #1b03a3;
+$color-sub: #0cbfe9;
 
 // Spacing
 $s-size: 1.2rem;
@@ -11,13 +11,7 @@ $xl-size: 4.8rem;
 $size-logo: 11rem;
 $desktop-breakpoint: 45rem;
 
-.small-p{
-  font-size: $s-size;
-  color: #fff;
-  text-align: center;
-  margin: 0;
-  align-self: center;
-}
+
 // Logo
 @font-face {
   font-family: 'icomoon';

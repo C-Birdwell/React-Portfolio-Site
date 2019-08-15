@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import Anime from 'react-anime';
 import ReactSVG from 'react-svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUserTie,  faSatelliteDish, faClipboardList } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faUserTie, faSatelliteDish, faClipboardList } from '@fortawesome/free-solid-svg-icons'
 
 export default class Header extends React.Component {
 
@@ -56,16 +56,21 @@ export default class Header extends React.Component {
             <div className="row">
               <div className="col-1">
                 <NavLink to="/" activeClassName="active" exact={true}>
-                  <FontAwesomeIcon icon={ faSatelliteDish} className="nav-icon" />
+                    <FontAwesomeIcon icon={faSatelliteDish} className="nav-icon" />
                 </NavLink>
               </div>
               <div className="col-1">
                 <NavLink to="/summary" activeClassName="active">
+                  <FontAwesomeIcon icon={faUser} className="nav-icon" />
+                </NavLink>
+              </div>
+              <div className="col-1">
+                <NavLink to="/history" activeClassName="active">
                   <FontAwesomeIcon icon={faUserTie} className="nav-icon" />
                 </NavLink>
               </div>
               <div className="col-1">
-                <NavLink to="/create" activeClassName="active">
+                <NavLink to="/history" activeClassName="active">
                   <FontAwesomeIcon icon={faClipboardList} className="nav-icon" />
                 </NavLink>
               </div>

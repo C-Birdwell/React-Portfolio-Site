@@ -13,16 +13,12 @@ a {
   }
 }
 
-p {
-  color: #fff;
-}
-
 body {
   flex: 1;
   flex-direction: column;
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   & * {
     display: flex;
@@ -33,8 +29,28 @@ body {
   }
 }
 
+p {
+  color: #fff;
+  font-family: Roboto;
+  flex: 0
+}
+
+.small-p{
+  font-size: $s-size;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  align-self: center;
+}
+
+h2 {
+  color: $color-sub;
+  font-family: Montserrat;
+  flex: 0
+}
+
 #app{
-  height: 100%;
+  height: 100vh;
 }
 
 .content-container{
