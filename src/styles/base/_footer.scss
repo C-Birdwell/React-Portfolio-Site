@@ -1,0 +1,9 @@
+@import './base/settings';
+
+.footer-container {
+  min-height: 20vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba($color-background, 0.75);
+}

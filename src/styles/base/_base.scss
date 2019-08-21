@@ -2,15 +2,8 @@
 
 html {
   font-size: 62.5%;
-  height: 100%;
-  width: 100%;
-}
 
-a {
-  text-decoration: none;
-  &:-webkit-any-link {
-    color: initial;
-  }
+  overflow-x: hidden;
 }
 
 body {
@@ -28,33 +21,15 @@ body {
   }
 }
 
-p {
-  color: #fff;
-  font-family: Roboto;
-  flex: 0;
-}
-
-.small-p {
-  font-size: $s-size;
-  color: #fff;
-  text-align: center;
-  margin: 0;
-  align-self: center;
-}
-
-h2 {
-  color: $color-sub;
-  font-family: Montserrat;
-  flex: 0;
-}
-
 #app {
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
 }
 
 .content-container {
   flex: 8;
-  overflow: hidden;
+  padding-bottom: 20vh;
+  min-height: 120vh;
 }
 
 button {

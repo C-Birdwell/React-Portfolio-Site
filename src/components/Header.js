@@ -7,17 +7,17 @@ import {
   faUser,
   faUserTie,
   faSatelliteDish,
-  faClipboardList
+  faClipboardList,
 } from '@fortawesome/free-solid-svg-icons'
 
 export default class Header extends React.Component {
   renderName() {
     const animeProps = {
-      opacity: [0, 1, 0.5],
+      opacity: [0, 1],
       scale: [0.5, 1.25, 1],
       translateY: [-500, 0],
       duration: 1250,
-      easing: 'linear'
+      easing: 'linear',
     }
 
     return (

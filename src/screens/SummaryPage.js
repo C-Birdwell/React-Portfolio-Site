@@ -2,6 +2,9 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 
 export default class SummaryPage extends React.Component {
+  componentDidMount() {
+    console.log(this.props)
+  }
   render() {
     return (
       <Fade
