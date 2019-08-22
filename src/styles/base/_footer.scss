@@ -7,3 +7,20 @@
   bottom: 0;
   background-color: rgba($color-background, 0.75);
 }
+.footerBar {
+  position: absolute;
+  top: 0;
+  height: 3px;
+  width: calc(2.5% + 3px);
+  z-index: 100;
+  background-color: #0cbfe9;
+  &.left {
+    border-bottom-right-radius: 3px;
+    left: 0;
+  }
+
+  &.right {
+    border-bottom-left-radius: 3px;
+    right: 0;
+  }
+}

@@ -19,11 +19,7 @@ export default class EmploymentPage extends React.Component {
 
   render() {
     return (
-      <Fade
-        bottom
-        //delay={750}
-        duration={1250}
-      >
+      <Fade bottom delay={100} duration={1500}>
         <div className="screen-content">
           <h2>Employment History</h2>
           {employmentHistory.map((val, i) =>

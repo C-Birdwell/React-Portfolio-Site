@@ -6,3 +6,10 @@
   -o-transition: $args;
   transition: $args;
 }
+
+@mixin headLine($color, $marginBottom) {
+  color: $color;
+  font-family: Montserrat;
+  margin: 0 0 $marginBottom 0;
+  flex: 0;
+}

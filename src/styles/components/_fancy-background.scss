@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   overflow: hidden;
-  background-color: scale-color($color-sub, $lightness: -75%);
+  background-color: scale-color($color-sub, $lightness: -25%);
 }
 .fancy-background {
   background: linear-gradient(10deg, $color-background, lighten($color-background, 25%));

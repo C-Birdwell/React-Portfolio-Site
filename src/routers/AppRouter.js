@@ -25,7 +25,10 @@ const AppRouter = () => (
       </Switch>
     </div>
     <div className="footer-container">
-      <footer></footer>
+      <footer>
+        <div className="footerBar left"></div>
+        <div className="footerBar right"></div>
+      </footer>
     </div>
   </BrowserRouter>
 )
