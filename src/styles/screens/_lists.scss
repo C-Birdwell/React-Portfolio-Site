@@ -1,0 +1,40 @@
+@import './base/settings';
+
+.job-wrapper {
+  margin: 0 0 40px 0;
+}
+
+.job-summary-wrapper {
+  & ul {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    & li {
+      display: inline-block;
+      flex-direction: row;
+      justify-content: center;
+      &:hover p,
+      &:hover i::before {
+        color: lighten($color-main, 10%);
+      }
+      & p {
+        display: inline-block;
+        align-self: center;
+        transition: color 1s;
+      }
+      & i {
+        display: inline-block;
+        align-self: center;
+        align-items: center;
+        padding: 0 10px 10px 0;
+        &::before {
+          transition: color 1s;
+          color: $color-sub;
+        }
+      }
+    }
+  }
+}
+
+.skill-wrapper {
+  @extend .job-summary-wrapper;
+}

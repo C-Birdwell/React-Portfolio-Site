@@ -5,7 +5,7 @@
   width: calc(100vw);
   z-index: 200;
   padding: 0 2.5%;
-  background-color: rgba($color-background, 0.75);
+  background-color: rgba($color-background, 0.9);
   border: 3px solid $color-main;
   border-top: 0px;
   border-radius: 0px 0px 25px 25px;
@@ -22,24 +22,25 @@ header {
     text-align: center;
     flex: 0;
   }
-}
 
-.svg-inline--fa.nav-icon {
-  width: 100%;
-  max-width: 75px;
-  align-self: center;
-  transform: scale(0.8);
-  transition: all 1s;
-  & path {
+  & .svg-inline--fa.nav-icon {
+    width: 100%;
+    max-width: 75px;
+    align-self: center;
+    transform: scale(0.8);
     transition: all 1s;
-    fill: $color-main;
-    opacity: 0.5;
+    & path {
+      transition: all 1s;
+      fill: $color-sub;
+      opacity: 0.5;
+    }
   }
-}
 
-.active .svg-inline--fa.nav-icon {
-  transform: scale(1);
-  & path {
-    opacity: 1;
+  & .active .svg-inline--fa.nav-icon {
+    transform: scale(1);
+    & path {
+      opacity: 1;
+      fill: $color-main;
+    }
   }
 }
