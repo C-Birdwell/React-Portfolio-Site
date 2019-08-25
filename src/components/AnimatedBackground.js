@@ -1,9 +1,12 @@
 import React from 'react'
 import Anime from 'react-anime'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import { _onUpdateFancyBackground } from '../actions'
 
 const gridNum = 20
 
-export default class AnimatedBackground extends React.Component {
+class AnimatedBackground extends React.Component {
   renderBox(i, delayXaxis) {
     const duration1 = 100
     const duration2 = 500
@@ -66,6 +69,24 @@ export default class AnimatedBackground extends React.Component {
   }
 
   render() {
-    return <div className="background-holder">{this.renderBoxGrid()}</div>
+    const { fancyBackground } = this.props
+    return (
+      <div className="background-holder" key={`${fancyBackground}`}>
+        {this.renderBoxGrid()}
+      </div>
+    )
   }
 }
+
+const mapStateToProps = state => ({
+  fancyBackground: state.animations.fancyBackground,
+})
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ _onUpdateFancyBackground }, dispatch)
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(AnimatedBackground)

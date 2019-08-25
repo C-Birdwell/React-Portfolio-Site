@@ -1,7 +1,7 @@
 import { FANCY_BACKGROUND } from '../actions/types'
 
 const INITIAL_STATE = {
-  fancyBackground: true,
+  fancyBackground: '',
 }
 
 export default (state = INITIAL_STATE, action) => {

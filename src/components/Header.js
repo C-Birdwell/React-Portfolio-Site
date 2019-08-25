@@ -15,12 +15,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 class Header extends React.Component {
-  componentDidMount() {
-    const { fancyBackground } = this.props
-    console.log(fancyBackground)
-  }
   renderName() {
-    const animeProps = {
+    const props = {
       opacity: [0, 1],
       scale: [0.5, 1.25, 1],
       translateY: [-500, 0],
@@ -30,12 +26,8 @@ class Header extends React.Component {
 
     return (
       <h1>
-        <Anime {...animeProps} delay={100}>
-          <span>Web By</span>
-        </Anime>
-        <Anime {...animeProps}>
-          <span>Birdwell</span>
-        </Anime>
+        <span>Web By</span>
+        <span>Birdwell</span>
       </h1>
     )
   }
@@ -44,7 +36,7 @@ class Header extends React.Component {
     return (
       <div className="row">
         <div className="col-1 center">
-          <ReactSVG src="/assets/images/logo.svg" />
+          <ReactSVG src="/assets/images/logo.svg" className="logo-img" />
         </div>
         <div className="col-4">
           <NavLink to="/" activeClassName="active" exact={true}>
@@ -63,7 +55,7 @@ class Header extends React.Component {
           to={to}
           activeClassName="active"
           exact={exact}
-          onClick={() => _onUpdateFancyBackground(false)}
+          onClick={() => _onUpdateFancyBackground(to)}
         >
           <FontAwesomeIcon icon={icon} className="nav-icon" />
         </NavLink>

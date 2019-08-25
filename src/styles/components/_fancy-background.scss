@@ -10,6 +10,7 @@
   overflow: hidden;
   background-color: scale-color($color-sub, $lightness: -25%);
 }
+
 .fancy-background {
   background: linear-gradient(10deg, $color-background, lighten($color-background, 25%));
   background-attachment: fixed;
