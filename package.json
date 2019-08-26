@@ -18,6 +18,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.21",
     "@fortawesome/free-solid-svg-icons": "^5.10.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "@types/mini-css-extract-plugin": "^0.8.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.2",
@@ -35,12 +36,12 @@
     "global": "^4.4.0",
     "globally": "^0.0.0",
     "js-yaml": "^3.13.1",
+    "mini-css-extract-plugin": "^0.8.0",
     "moment": "^2.24.0",
-    "node-sass": "^4.8.3",
     "normalize.css": "7.0.0",
     "numeral": "^2.0.6",
     "prettier": "^1.18.2",
-    "react": "^16.8.6",
+    "react": "^16.9.0",
     "react-addons-shallow-compare": "15.6.0",
     "react-anime": "^2.2.0",
     "react-dates": "12.3.0",
@@ -54,19 +55,20 @@
     "react-router-dom": "^5.0.1",
     "react-svg": "^10.0.17",
     "redux": "3.7.2",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
+    "style-loader": "^1.0.0",
     "uuid": "3.1.0",
     "validator": "8.0.0",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0"
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
   },
   "devDependencies": {
-    "enzyme": "2.9.1",
+    "enzyme": "^3.10.0",
     "enzyme-to-json": "1.5.1",
     "eslint-config-prettier": "^6.0.0",
     "jest": "20.0.4",
+    "node-sass": "^4.12.0",
     "react-test-renderer": "15.6.1",
-    "webpack-dev-server": "^3.3.0"
+    "sass-loader": "^7.3.1"
   }
 }
