@@ -4,6 +4,8 @@ import { Provider } from 'react-redux'
 import AppRouter from './routers/AppRouter'
 import configureStore from './store/configureStore'
 import { createStore } from 'redux'
+import 'normalize.css/normalize.css'
+import './styles/styles.scss'
 
 const store = createStore(
   configureStore,
