@@ -10,7 +10,7 @@ export default class SkillsPage extends React.Component {
       <div className="col-1">
         <a href={link} target="_blank">
           <div className="link-button">
-            <FontAwesomeIcon icon={icon} className="nav-icon" />
+            <FontAwesomeIcon icon={icon} />
             <p>{text}</p>
           </div>
         </a>

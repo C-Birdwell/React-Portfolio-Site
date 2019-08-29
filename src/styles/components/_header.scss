@@ -2,7 +2,7 @@
 
 .header-container {
   position: fixed;
-  width: calc(100vw);
+  width: 100vw;
   z-index: 200;
   padding: 0 2.5%;
   background-color: rgba($color-background, 0.9);
@@ -15,14 +15,12 @@
 }
 header {
   flex: 1;
-
   & i {
     font-size: $size-logo;
     display: block;
     text-align: center;
     flex: 0;
   }
-
   & .svg-inline--fa.nav-icon {
     width: 100%;
     max-width: 75px;
@@ -35,7 +33,6 @@ header {
       opacity: 0.5;
     }
   }
-
   & .active .svg-inline--fa.nav-icon {
     transform: scale(1);
     & path {

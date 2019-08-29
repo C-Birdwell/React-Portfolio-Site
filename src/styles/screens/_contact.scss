@@ -1,0 +1,18 @@
+@import './base/settings';
+
+.contact-wrapper {
+  display: inline-block;
+  & p {
+    display: inline-block;
+    font-size: $l-size;
+    vertical-align: middle;
+    margin: 0;
+  }
+  & svg {
+    display: inline-block;
+    padding: 0 15px 0 0;
+    width: $xl-size !important;
+    height: $xl-size;
+    vertical-align: middle;
+  }
+}

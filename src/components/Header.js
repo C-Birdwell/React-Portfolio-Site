@@ -2,28 +2,14 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import Anime from 'react-anime'
 import ReactSVG from 'react-svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { _onUpdateFancyBackground } from '../actions'
 
-import {
-  faUser,
-  faUserTie,
-  faSatelliteDish,
-  faClipboardList,
-} from '@fortawesome/free-solid-svg-icons'
+import { faUser, faUserTie, faClipboardList } from '@fortawesome/free-solid-svg-icons'
 
 class Header extends React.Component {
   renderName() {
-    const props = {
-      opacity: [0, 1],
-      scale: [0.5, 1.25, 1],
-      translateY: [-500, 0],
-      duration: 1250,
-      easing: 'linear',
-    }
-
     return (
       <h1>
         <span>Web By</span>
@@ -70,8 +56,7 @@ class Header extends React.Component {
           <div className="col-1">{this.renderLogo()}</div>
           <div className="col-2">
             <div className="row">
-              {this.renderLink('/', faSatelliteDish, true)}
-              {this.renderLink('/summary', faUser)}
+              {this.renderLink('/', faUser, true)}
               {this.renderLink('/history', faUserTie)}
               {this.renderLink('/skills', faClipboardList)}
             </div>
