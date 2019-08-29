@@ -1,18 +1,23 @@
 @import './base/settings';
 
-.header-container {
+.header-wrapper {
   position: fixed;
-  width: 100vw;
   z-index: 200;
   padding: 0 2.5%;
-  background-color: rgba($color-background, 0.9);
-  border: 3px solid $color-main;
+  background-color: transparent;
+  border: 3px solid transparent;
   border-top: 0px;
   border-radius: 0px 0px 25px 25px;
   width: 98%;
   align-self: center;
   padding-bottom: 1vh;
+  transition: all 1s;
+  &.change {
+    border-color: $color-main;
+    background-color: rgba($color-background, 0.9);
+  }
 }
+
 header {
   flex: 1;
   & i {
