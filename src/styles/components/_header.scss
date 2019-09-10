@@ -12,6 +12,9 @@
   align-self: center;
   padding-bottom: 1vh;
   transition: all 1s;
+  @media screen and (max-width: $mobile-break) {
+    padding: 0 0 0 0;
+  }
   &.change {
     border-color: $color-main;
     background-color: rgba($color-background, 0.9);
@@ -26,27 +29,13 @@ header {
     text-align: center;
     flex: 0;
   }
-  & .svg-inline--fa.nav-icon {
-    width: 100%;
-    max-width: 75px;
-    align-self: center;
-    transform: scale(0.8);
-    transition: all 1s;
-    & path {
-      transition: all 1s;
-      fill: $color-sub;
-      opacity: 0.5;
-    }
-  }
-  & .active .svg-inline--fa.nav-icon {
-    transform: scale(1);
-    & path {
-      opacity: 1;
-      fill: $color-main;
-    }
-  }
 }
 
 .here {
   color: #fff;
+}
+
+.logo-img svg {
+  width: 80px;
+  align-self: flex-end;
 }

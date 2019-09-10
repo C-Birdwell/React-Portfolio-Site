@@ -1,0 +1,21 @@
+.navigation {
+  & .svg-inline--fa.nav-icon {
+    width: 100%;
+    max-width: 75px;
+    align-self: center;
+    transform: scale(0.8);
+    transition: all 1s;
+    & path {
+      transition: all 1s;
+      fill: $color-sub;
+      opacity: 0.5;
+    }
+  }
+  & .active .svg-inline--fa.nav-icon {
+    transform: scale(1);
+    & path {
+      opacity: 1;
+      fill: $color-main;
+    }
+  }
+}

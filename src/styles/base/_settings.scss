@@ -12,6 +12,12 @@ $xxl-size: 6.58rem;
 $size-logo: 11rem;
 $desktop-breakpoint: 45rem;
 
+// Responsive Layout
+$mobile-break: 1150px;
+
+// Border
+$neon-border: 3px solid $color-sub;
+
 // Logo
 @font-face {
   font-family: 'icomoon';

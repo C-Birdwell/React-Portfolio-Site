@@ -7,6 +7,7 @@ import SkillsPage from '../screens/SkillsPage'
 
 import NotFoundPage from '../components/NotFoundPage'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import AnimatedBackground from '../components/AnimatedBackground'
 
 const AppRouter = () => (
@@ -25,10 +26,7 @@ const AppRouter = () => (
       </Switch>
     </div>
     <div className="footer-container">
-      <footer>
-        <div className="footerBar left"></div>
-        <div className="footerBar right"></div>
-      </footer>
+      <Footer />
     </div>
   </BrowserRouter>
 )

@@ -8,11 +8,17 @@ h1 {
   font-size: $xl-size;
   margin: 0;
   justify-content: center;
+  @media screen and (max-width: $mobile-break) {
+    font-size: $xl-size * 0.75;
+  }
   & span {
     display: block;
     flex: none;
     &:nth-child(1) {
       font-size: $xxl-size;
+      @media screen and (max-width: $mobile-break) {
+        font-size: $xxl-size * 0.75;
+      }
     }
   }
 }

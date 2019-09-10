@@ -12,6 +12,7 @@ export default (state = INITIAL_STATE, action) => {
 
     case HAS_SCROLLED:
       return { ...state, hasScrolled: action.payload }
+
     default:
       return { ...state }
   }

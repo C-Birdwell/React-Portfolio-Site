@@ -6,6 +6,20 @@
   position: absolute;
   bottom: 0;
   background-color: rgba($color-background, 0.75);
+  @media screen and (max-width: $mobile-break) {
+    background-color: transparent;
+    position: fixed;
+  }
+  & .navigation {
+    width: 80%;
+    align-self: center;
+    background-color: rgba($color-background, 0.75);
+    border-radius: 25px;
+    border: $neon-border;
+    & svg {
+      align-self: center;
+    }
+  }
 }
 .footerBar {
   position: absolute;
