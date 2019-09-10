@@ -9,6 +9,8 @@
   @media screen and (max-width: $mobile-break) {
     background-color: transparent;
     position: fixed;
+    min-height: 0vh;
+    bottom: 2vh;
   }
   & .navigation {
     width: 80%;
@@ -16,6 +18,9 @@
     background-color: rgba($color-background, 0.75);
     border-radius: 25px;
     border: $neon-border;
+    @media screen and (max-width: $mobile-break) {
+      max-height: 10vh;
+    }
     & svg {
       align-self: center;
     }

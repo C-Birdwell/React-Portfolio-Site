@@ -30,6 +30,9 @@ body {
   flex: 8;
   padding-bottom: 20vh;
   min-height: 120vh;
+  @media screen and (max-width: $mobile-break) {
+    padding-bottom: 25vh;
+  }
 }
 
 button {

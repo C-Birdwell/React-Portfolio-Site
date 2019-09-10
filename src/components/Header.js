@@ -69,7 +69,7 @@ class Header extends React.Component {
   renderPhantomColumn() {
     const { windowMode } = this.props
     if (windowMode === 'mobile') {
-      return <div className="col-1"></div>
+      return <div className="col-2"></div>
     } else {
       return null
     }

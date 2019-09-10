@@ -1,3 +1,5 @@
+@import '../base/settings';
+
 .navigation {
   & .svg-inline--fa.nav-icon {
     width: 100%;
@@ -5,6 +7,10 @@
     align-self: center;
     transform: scale(0.8);
     transition: all 1s;
+    @media screen and (max-width: $mobile-break) {
+      max-width: $l-size;
+    }
+
     & path {
       transition: all 1s;
       fill: $color-sub;
@@ -17,5 +23,12 @@
       opacity: 1;
       fill: $color-main;
     }
+  }
+  & .row {
+    max-height: 10vh;
+  }
+  & a {
+    justify-content: center;
+    height: 100%;
   }
 }

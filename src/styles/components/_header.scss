@@ -14,6 +14,7 @@
   transition: all 1s;
   @media screen and (max-width: $mobile-break) {
     padding: 0 0 0 0;
+    max-height: 15vh;
   }
   &.change {
     border-color: $color-main;
@@ -29,6 +30,14 @@ header {
     text-align: center;
     flex: 0;
   }
+  & .row {
+    @media screen and (max-width: $mobile-break) {
+      max-height: 15vh;
+    }
+  }
+  @media screen and (max-width: $mobile-break) {
+    max-height: 15vh;
+  }
 }
 
 .here {
@@ -38,4 +47,7 @@ header {
 .logo-img svg {
   width: 80px;
   align-self: flex-end;
+  @media screen and (max-width: $mobile-break) {
+    width: 60px;
+  }
 }
