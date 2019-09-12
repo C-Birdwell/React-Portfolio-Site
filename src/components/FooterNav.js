@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import Nav from './Nav'
+
 import { _onToggleNav } from '../actions'
 
 class FooterNav extends React.Component {

@@ -18,12 +18,16 @@ export default class DashboardPage extends React.Component {
     )
   }
 
-  renderContactMethod(icon, text) {
+  renderContactMethod(icon, text, linkFormat) {
+    const linkDestination = 'https://github.com/C-Birdwell'
+
     return (
-      <div className="contact-wrapper">
-        <FontAwesomeIcon icon={icon} />
-        <p>{text}</p>
-      </div>
+      <a href={linkDestination}>
+        <div className="contact-wrapper">
+          <FontAwesomeIcon icon={icon} />
+          <p>{text}</p>
+        </div>
+      </a>
     )
   }
 

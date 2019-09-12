@@ -4,8 +4,6 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { _onUpdateFancyBackground } from '../actions'
 
-//const gridNum = 20
-
 class AnimatedBackground extends React.Component {
   renderBox(i, delayXaxis) {
     const { gridNum } = this.props
@@ -16,8 +14,7 @@ class AnimatedBackground extends React.Component {
     const delayToScale = -delayXaxis * 0.1
     const scaleLowest = (delayToScale + 100) * 0.01
     const halfTheRow = i < gridNum * 0.5
-    //const scaleXaxis = delayToScale
-    //const det = halfTheRow ? (((i - 1) * 5) - 5) + -delayToScale : (( (i) * 5)) + delayToScale
+
     const arrayScale = [
       { value: 1, easing: 'easeInOutQuad', duration: duration1 },
       {
