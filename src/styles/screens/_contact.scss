@@ -2,11 +2,15 @@
 
 .contact-wrapper {
   display: inline-block;
+  margin: 0 0 20px 0;
   & p {
     display: inline-block;
     font-size: $l-size;
     vertical-align: middle;
     margin: 0;
+    @media screen and (max-width: $smallest-break) {
+      font-size: $m-size;
+    }
   }
   & svg {
     display: inline-block;
@@ -14,5 +18,9 @@
     width: $xl-size !important;
     height: $xl-size;
     vertical-align: middle;
+    @media screen and (max-width: $smallest-break) {
+      width: $l-size;
+      height: $l-size;
+    }
   }
 }

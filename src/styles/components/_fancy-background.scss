@@ -16,6 +16,10 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  @media screen and (max-width: $mobile-break) {
+    background: $color-background;
+    background-attachment: initial;
+  }
 }
 
 .box {

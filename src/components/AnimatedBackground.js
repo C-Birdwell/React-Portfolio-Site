@@ -4,10 +4,12 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { _onUpdateFancyBackground } from '../actions'
 
-const gridNum = 20
+//const gridNum = 20
 
 class AnimatedBackground extends React.Component {
   renderBox(i, delayXaxis) {
+    const { gridNum } = this.props
+
     const duration1 = 100
     const duration2 = 500
     const duration3 = 1000
@@ -41,6 +43,8 @@ class AnimatedBackground extends React.Component {
   }
 
   renderBoxRow(i, delayXaxis) {
+    const { gridNum } = this.props
+
     const renderBoxRow = []
     for (let i = 1; i <= gridNum; i++) {
       renderBoxRow.push(this.renderBox(i, delayXaxis))
@@ -53,6 +57,8 @@ class AnimatedBackground extends React.Component {
   }
 
   renderBoxGrid() {
+    const { gridNum } = this.props
+
     const renderBoxGrid = []
     let delayXaxis = 0
 
@@ -69,9 +75,9 @@ class AnimatedBackground extends React.Component {
   }
 
   render() {
-    const { fancyBackground } = this.props
+    const { fancyBackground, gridNum } = this.props
     return (
-      <div className="background-holder" key={`${fancyBackground}`}>
+      <div className="background-holder" key={`${fancyBackground}-${gridNum}`}>
         {this.renderBoxGrid()}
       </div>
     )
@@ -80,6 +86,7 @@ class AnimatedBackground extends React.Component {
 
 const mapStateToProps = state => ({
   fancyBackground: state.animations.fancyBackground,
+  gridNum: state.layout.gridNum,
 })
 
 function mapDispatchToProps(dispatch) {

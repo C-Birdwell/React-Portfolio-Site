@@ -24,11 +24,13 @@
       fill: $color-main;
     }
   }
-  & .row {
-    max-height: 10vh;
-  }
+
   & a {
     justify-content: center;
     height: 100%;
   }
+}
+
+.footer-container .navigation .row {
+  max-height: 10vh;
 }
