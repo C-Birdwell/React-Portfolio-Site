@@ -76,16 +76,17 @@ class Header extends React.Component {
   }
 
   render() {
-    const { hasScrolled, windowMode } = this.props
+    const { hasScrolled, windowMode, windowSize } = this.props
     const changeStyle = hasScrolled ? 'change' : 'init'
     const windowLayout = windowMode === 'desktop'
-    const logoFix = windowLayout ? 'col-1' : 'col-3'
+    const logoFix = windowLayout ? 'col-1' : 'col-7'
 
     return (
       <div className={`header-wrapper ${changeStyle}`}>
         <header>
           <div className="row">
             {this.renderPhantomColumn()}
+            {windowSize >= 530 && this.renderPhantomColumn()}
             <div className={logoFix}>{this.renderLogo()}</div>
             {windowLayout && (
               <div className="col-2">
@@ -103,6 +104,7 @@ class Header extends React.Component {
 const mapStateToProps = state => ({
   hasScrolled: state.animations.hasScrolled,
   windowMode: state.layout.windowMode,
+  windowSize: state.layout.windowSize,
 })
 
 function mapDispatchToProps(dispatch) {
