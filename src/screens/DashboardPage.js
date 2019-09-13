@@ -1,4 +1,5 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import Fade from 'react-reveal/Fade'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneAlt, faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons'
@@ -8,7 +9,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 library.add(fab, faPhoneAlt, faEnvelopeOpenText)
 
-export default class DashboardPage extends React.Component {
+class DashboardPage extends React.Component {
   renderForward() {
     return (
       <div className="forward-content card">
@@ -18,11 +19,9 @@ export default class DashboardPage extends React.Component {
     )
   }
 
-  renderContactMethod(icon, text, linkFormat) {
-    const linkDestination = 'https://github.com/C-Birdwell'
-
+  renderContactMethod(icon, text, href, target = null) {
     return (
-      <a href={linkDestination}>
+      <a href={href} target={target}>
         <div className="contact-wrapper">
           <FontAwesomeIcon icon={icon} />
           <p>{text}</p>
@@ -32,12 +31,31 @@ export default class DashboardPage extends React.Component {
   }
 
   renderContactSummary() {
+    const { windowMode } = this.props
     return (
       <div className="contact-content card">
         <h3>Contact</h3>
-        {this.renderContactMethod(faPhoneAlt, '( 713 ) - 542 - 4597')}
-        {this.renderContactMethod(faEnvelopeOpenText, 'Web.By.Birdwell@gmail.com')}
-        {this.renderContactMethod(['fab', 'github'], 'https://github.com/C-Birdwell')}
+        <div className={windowMode === 'mobile' ? 'row' : ''}>
+          <div className={windowMode === 'mobile' ? 'col-1' : ''}>
+            {this.renderContactMethod(faPhoneAlt, '( 713 ) - 542 - 4597', 'tel:1-713-542-4597')}
+          </div>
+          <div className={windowMode === 'mobile' ? 'col-1' : ''}>
+            {this.renderContactMethod(
+              faEnvelopeOpenText,
+              'Web.By.Birdwell@gmail.com',
+              'mailto:Web.By.Birdwell@gmail.com',
+              '_top',
+            )}
+          </div>
+          <div className={windowMode === 'mobile' ? 'col-1' : ''}>
+            {this.renderContactMethod(
+              ['fab', 'github'],
+              'https://github.com/C-Birdwell',
+              'https://github.com/C-Birdwell',
+              '_blank',
+            )}
+          </div>
+        </div>
       </div>
     )
   }
@@ -54,8 +72,9 @@ export default class DashboardPage extends React.Component {
   }
 
   render() {
+    const { windowMode } = this.props
     return (
-      <Fade bottom duration={1250}>
+      <Fade bottom={windowMode === 'desktop'} duration={1250}>
         <div className="screen-content">
           <h2>Colin Birdwell</h2>
           {this.renderForward()}
@@ -66,3 +85,9 @@ export default class DashboardPage extends React.Component {
     )
   }
 }
+
+const mapStateToProps = state => ({
+  windowMode: state.layout.windowMode,
+})
+
+export default connect(mapStateToProps)(DashboardPage)

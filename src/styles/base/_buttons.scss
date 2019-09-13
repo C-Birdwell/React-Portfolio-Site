@@ -1,26 +1,19 @@
 @import 'settings';
 
 .link-button {
-  display: inline-block;
-  background-color: $color-main;
   justify-content: center;
-  margin: 0 2.5% 20px 2.5%;
-  padding: 20px 2.5%;
-  max-width: 200px;
-  //border: 2px solid $color-sub;
   border-radius: 25px;
-  white-space: nowrap;
-  & svg {
-    display: inline-block;
-    width: 30% !important;
+  border: 2px solid $color-sub;
+  margin: 0 5%;
+  max-width: 400px;
+  height: 100px;
+  & svg.svg-inline--fa {
+    align-self: center;
+    width: 100%;
+    max-width: 40px;
+
     & path {
       fill: $color-sub;
     }
-  }
-  & p {
-    display: inline-block;
-    color: $color-sub;
-    margin: 0 0 0 0;
-    width: 70%;
   }
 }

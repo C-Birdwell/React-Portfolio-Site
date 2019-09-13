@@ -1,17 +1,17 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import Fade from 'react-reveal/Fade'
 import { employmentSkills } from '../data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFile, faFileWord, faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import { faShareAlt, faFileWord, faFilePdf } from '@fortawesome/free-solid-svg-icons'
 
-export default class SkillsPage extends React.Component {
-  renderLinkButton(link, text, icon) {
+class SkillsPage extends React.Component {
+  renderLinkButton(link, icon) {
     return (
       <div className="col-1">
         <a href={link} target="_blank">
           <div className="link-button">
             <FontAwesomeIcon icon={icon} />
-            <p>{text}</p>
           </div>
         </a>
       </div>
@@ -23,13 +23,12 @@ export default class SkillsPage extends React.Component {
       <div className="docs-wrapper">
         <h3>Resume</h3>
         <div className="row">
-          {this.renderLinkButton('https://www.resume.com/share/colin-resume', 'Online', faFile)}
+          {this.renderLinkButton('https://www.resume.com/share/colin-resume', faShareAlt)}
           {this.renderLinkButton(
             '/assets/documents/colin-birdwell-font-end-developer.pdf',
-            'PDF',
             faFilePdf,
           )}
-          {this.renderLinkButton('https://www.resume.com/share/colin-resume', 'Word', faFileWord)}
+          {this.renderLinkButton('https://www.resume.com/share/colin-resume', faFileWord)}
         </div>
       </div>
     )
@@ -52,12 +51,9 @@ export default class SkillsPage extends React.Component {
   }
 
   render() {
+    const { windowMode } = this.props
     return (
-      <Fade
-        bottom
-        //delay={750}
-        duration={1250}
-      >
+      <Fade bottom={windowMode === 'desktop'} duration={1250}>
         <div className="screen-content">
           <h2>
             Skills <span>&</span> Documents
@@ -69,3 +65,9 @@ export default class SkillsPage extends React.Component {
     )
   }
 }
+
+const mapStateToProps = state => ({
+  windowMode: state.layout.windowMode,
+})
+
+export default connect(mapStateToProps)(SkillsPage)

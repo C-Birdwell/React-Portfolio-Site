@@ -3,24 +3,41 @@
 .contact-wrapper {
   display: inline-block;
   margin: 0 0 20px 0;
+  @media screen and (max-width: $mobile-break) {
+    margin: 0 5%;
+    max-width: 400px;
+    height: 100px;
+    border-radius: 25px;
+    border: 2px solid $color-sub;
+    justify-content: center;
+    display: flex;
+    min-height: 100px;
+  }
   & p {
     display: inline-block;
     font-size: $l-size;
     vertical-align: middle;
     margin: 0;
-    @media screen and (max-width: $smallest-break) {
-      font-size: $m-size;
+    @media screen and (max-width: $mobile-break) {
+      display: none;
     }
   }
-  & svg {
+  & svg.svg-inline--fa {
     display: inline-block;
     padding: 0 15px 0 0;
-    width: $xl-size !important;
+    width: $xl-size;
     height: $xl-size;
     vertical-align: middle;
-    @media screen and (max-width: $smallest-break) {
-      width: $l-size;
-      height: $l-size;
+    @media screen and (max-width: $mobile-break) {
+      align-self: center;
+      width: 100%;
+      max-height: 55px;
+      padding: 0 0 0 0;
+    }
+    & path {
+      @media screen and (max-width: $mobile-break) {
+        fill: $color-sub;
+      }
     }
   }
 }

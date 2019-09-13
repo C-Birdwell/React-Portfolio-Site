@@ -1,11 +1,10 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import Fade from 'react-reveal/Fade'
 import { employmentHistory } from '../data'
 import ReactHtmlParser from 'react-html-parser'
 
-export default class EmploymentPage extends React.Component {
-  componentDidMount() {}
-
+class EmploymentPage extends React.Component {
   renderJobHistoryItem(company, role, date, text, i) {
     return (
       <div className="job-wrapper" key={i}>
@@ -18,8 +17,9 @@ export default class EmploymentPage extends React.Component {
   }
 
   render() {
+    const { windowMode } = this.props
     return (
-      <Fade bottom delay={100} duration={1500}>
+      <Fade bottom={windowMode === 'desktop'} delay={100} duration={1500}>
         <div className="screen-content">
           <h2>Employment History</h2>
           {employmentHistory.map((val, i) =>
@@ -30,3 +30,9 @@ export default class EmploymentPage extends React.Component {
     )
   }
 }
+
+const mapStateToProps = state => ({
+  windowMode: state.layout.windowMode,
+})
+
+export default connect(mapStateToProps)(EmploymentPage)
