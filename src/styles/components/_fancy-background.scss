@@ -12,13 +12,15 @@
 }
 
 .fancy-background {
-  background: linear-gradient(10deg, $color-background, lighten($color-background, 25%));
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  background: $color-background;
+  //Only works on Chrome needs fix later
+  // background: linear-gradient(10deg, $color-background, lighten($color-background, 25%));
+  // background-attachment: fixed;
+  // background-size: cover;
+  // background-position: center;
   @media screen and (max-width: $mobile-break) {
-    background: $color-background;
-    background-attachment: initial;
+    // background: $color-background;
+    // background-attachment: initial;
   }
 }
 
