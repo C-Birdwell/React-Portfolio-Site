@@ -28,7 +28,10 @@ class SkillsPage extends React.Component {
             '/assets/documents/colin-birdwell-font-end-developer.pdf',
             faFilePdf,
           )}
-          {this.renderLinkButton('https://www.resume.com/share/colin-resume', faFileWord)}
+          {this.renderLinkButton(
+            '/assets/documents/colin-birdwell-font-end-developer.docx',
+            faFileWord,
+          )}
         </div>
       </div>
     )
