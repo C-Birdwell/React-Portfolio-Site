@@ -16,7 +16,9 @@ class Nav extends React.Component {
           to={to}
           activeClassName="active"
           exact={exact}
-          onClick={() => _onUpdateFancyBackground(to)}
+          onClick={() => {
+            _onUpdateFancyBackground(to), window.scrollTo(0, 0)
+          }}
         >
           <FontAwesomeIcon icon={icon} className="nav-icon" />
         </NavLink>
@@ -37,15 +39,11 @@ class Nav extends React.Component {
   }
 }
 
-const mapStateToProps = state => ({
-  hasScrolled: state.animations.hasScrolled,
-})
-
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({ _onUpdateFancyBackground }, dispatch)
 }
 
 export default connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps,
 )(Nav)

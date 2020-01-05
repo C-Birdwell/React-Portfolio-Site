@@ -5,6 +5,7 @@ export const employmentSkills = [
   'React',
   'React-Native',
   'Redux',
+  'GraphQL',
   'Axios',
   'Jquery',
   'ModX',
