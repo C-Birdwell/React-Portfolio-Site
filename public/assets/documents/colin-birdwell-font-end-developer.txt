@@ -1,0 +1,59 @@
+Colin Birdwell 
+web.by.birdwell@gmail.com
+
+Education
+University of Houston                   Bachelor of Arts 
+Graduated                    
+Houston , Texas
+
+Employment History
+DeFalco's Home Wine and  Beer Supplies                     -  
+Houston , Texas
+With my experience as a developer:I supervised the implementation of a new website for the client's e-commerce needs Consulted about the possibilities of greater web presence Implementing SEO to establish data feed back targeted at existing and new customer bases
+Signet Interactive                     -  
+My primary role as a web developer at Signet Interactive, my duties included: Develop and create the functional websitesFollowed proper web standards, as well as the user experience for both mobile and desktop in mindVariety of web-related aspects, in regards to maintenance and support
+Freelance Web Development                     -  
+As a freelance web developer, I help smaller clients with a variety of web-related needs including:Site developmentConsulting, general website maintenance & troubleshooting, custom email templatesSocial media Google Apps integration A variety of other website/web-related needs
+San Antonio Water System Via Sistema Technologies                     -  
+The main project worked was a customer portal that handled water bill account needs.Coordinating responsive web development with project leadsAdvised on UX/UI related mattersIntegrated web technologies with legacy systemsExperiential Design
+Payment Data Systems Inc / Usio                     -  
+San Antonio , Texas
+Was main lead front end developer on rebuilding their proprietary financial debit card banking app white label template Akimbo onto a react-native platform.  App requirements included:Used React-Native for all front end Heavy use of Axios for http requestsAnimating visual components with haptic feedback Card to card transfers Bank to card transfersScheduling recurring  transfers (utilizing Moment.js to calculate future dates to pick from) Enrollment Image uploadMaintaining a list of transaction history Ordering new debit cards, enrollmentUsing keychain to store secure login information & touch id biometricsUtilizing environmental files for on boarding clients to utilize their branding for templating purposes   Displaying a live balance of each cardAlso assisted and monitored digital art assets for maintaining consistent brand guidelines (consistent colors on sites, making sure fonts were consistent, using the same border radius on visual components, etc...).
+
+Professional Skills
+HTML
+MongoDB
+Javascript
+React
+React-Native
+Redux
+Axios
+Jquery
+ModX
+Node.js
+Version Control
+UI/UX
+Adobe Photoshop/Illustrator
+npm
+Gulp
+eCommerce
+CSS
+Big Commerce
+Bootstrap
+Flexbox
+CSS Grid
+Formstack
+Social Media Integration
+Campaign Monitor, MailChimp, etc., Custom Email Template creation
+Bitbucket
+Github
+Sourcetree
+Yarn
+Visual Studio
+Git
+Sass
+GraphQL
+Hubspot
+
+Languages
+English: Native
