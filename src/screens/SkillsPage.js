@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import Fade from 'react-reveal/Fade'
 import { employmentSkills } from '../data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShareAlt, faFileWord, faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import { faFileAlt, faFileWord, faFilePdf } from '@fortawesome/free-solid-svg-icons'
 
 class SkillsPage extends React.Component {
   renderLinkButton(link, icon) {
@@ -23,7 +23,6 @@ class SkillsPage extends React.Component {
       <div className="docs-wrapper">
         <h3>Resume</h3>
         <div className="row">
-          {this.renderLinkButton('https://www.resume.com/share/colin-resume', faShareAlt)}
           {this.renderLinkButton(
             '/assets/documents/colin-birdwell-font-end-developer.pdf',
             faFilePdf,
@@ -31,6 +30,10 @@ class SkillsPage extends React.Component {
           {this.renderLinkButton(
             '/assets/documents/colin-birdwell-font-end-developer.docx',
             faFileWord,
+          )}
+          {this.renderLinkButton(
+            '/assets/documents/colin-birdwell-font-end-developer.txt',
+            faFileAlt,
           )}
         </div>
       </div>

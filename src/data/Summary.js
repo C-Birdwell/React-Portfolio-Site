@@ -15,7 +15,7 @@ export const summary = [
           design, and working within small, innovative teams of developers in an Agile/Scrum
           setting.
         `,
-  `Colin also has extensive knowledge on IT operations, middleware experience, and some
-          back-end experience with things like Node.js and SQL.
+  `
+  Colin also has extensive knowledge on IT operations, middleware experience, and some full-stack experience with things like Node.js, Postgres, GrapshQL, Prisma, and MongoDB. Self-motivated Web Developer with high level of experience working on multiple projects. Passionate and hardworking with penchant for meeting deadlines. Interested in role with company promoting best practices and offering diverse customer projects.
         `,
 ]

@@ -1,59 +1,102 @@
-Colin Birdwell 
-web.by.birdwell@gmail.com
+
+Colin Birdwell
+
+Tomball, Texas 77375
+Phone: (713) 542-4597
+E-Mail: web.by.birdwell@gmail.com
+
+Links
+
+            http://www.webbybirdwell.com/
+
+            https://github.com/C-Birdwell
+
+Skills
+
+HTML: Expert
+CSS: Expert
+Javascript: Expert
+React: Intermediate
+React-Native: Advanced
+Redux: Intermediate
+Axios: Intermediate
+Jquery: Advanced
+ModX: Expert
+Node.js: Intermediate
+Version Control: Advanced
+UI/UX: Advanced
+Adobe Photoshop/Illustrator: Beginner
+Npm: Intermediate
+Gulp: Intermediate
+ECommerce: Intermediate
+Hubspot: Advanced
+
+Big Commerce: Advanced
+Bootstrap: Expert
+Flexbox: Intermediate
+CSS Grid: Intermediate
+Formstack: Advanced
+Campaign Monitor, MailChimp, etc., Custom Email Template creation: Advanced
+Bitbucket: Advanced
+Github: Advanced
+Yarn: Intermediate
+Visual Studio: Intermediate
+Git: Intermediate
+Sass: Advanced
+GraphQL: Beginner
+MongoDB: Beginner
+Design patterns and principles
+UI improvements
+
+Professional Summary
+
+Determined Web Developer offering more than five years of experience. Colin has worked with online and digital businesses both as a web & app developer, in the industries of private agencies, online commerce, local government, utilities, and the financial banking. Bringing more than five years of experience, Colin can handle your front end coding needs. As an App Developer, he built the front end of a personal banking debit card app while using a in house api to update the backend. Colin incorporated concepts of templating components, extensive visual animations, and haptic feedback. As a Web Developer, his skills include working knowledge of several various web based languages, User Experience & User Interface design (UX/UI), online interactions, web design, and working within small, innovative teams of developers in an Agile/Scrum setting. Colin also has extensive knowledge on IT operations, middleware experience, and some full-stack experience with things like Node.js, Postgres, GrapshQL, Prisma, and MongoDB. Self-motivated Web Developer with high level of experience working on multiple projects. Passionate and hardworking with penchant for meeting deadlines. Interested in role with company promoting best practices and offering diverse customer projects.
+
+Work History
+
+January 2014 to Current
+Freelance Web Developer Houston, TX
+Web Developer    
+As a freelance web developer, I help smaller clients with a variety of web-related needs:
+
+Created and maintained websites
+General consultation for project development
+Social media and SEO tools into development integration
+Creating full-stack applications consisting of React/ GraphQL /Postgres
+
+April 2018 to July 2019
+Payment Data Systems Inc. San Antonio, TX
+Front End Developer    
+Was main lead front end developer on rebuilding their proprietary financial debit card banking app white label template Akimbo onto a react-native platform.   App requirements included:
+
+Heavy React-Native development
+Animating visual components with haptic feedback
+Card/Bank to card transfers
+Scheduling recurring transfers (utilizing Moment.js to calculate future dates to pick from)
+Using keychain to store secure login information & touch id biometrics
+Utilizing environmental files for on boarding clients to utilize their branding for templating purposes
+Assisting and monitored digital art assets for maintaining consistent brand guidelines
+
+January 2017 to February 2018
+San Antonio Water System Via Sistema Technologies San Antonio, Texas
+Web Developer Consultant    
+The main project worked was a customer portal that handled water bill account needs.
+
+Created site layout and user interface using HTML and CSS practices
+Coordinating responsive web development with project leads
+Advised on UX/UI related matters
+Integrated web technologies with legacy systems
+
+September 2014 to June 2016
+Signet Interactive Houston, TX
+Web Developer    
+
+Tested websites and performed troubleshooting prior to deployment.
+Created eye catching and functional digital design concepts across various platforms to strengthen client's brand and identity.
+Developed sites to be compatible with top browsers, including Firefox, Chrome and Safari.
+Created site layout and user interface using HTML and CSS practices.
 
 Education
-University of Houston                   Bachelor of Arts 
-Graduated                    
-Houston , Texas
 
-Employment History
-DeFalco's Home Wine and  Beer Supplies                     -  
-Houston , Texas
-With my experience as a developer:I supervised the implementation of a new website for the client's e-commerce needs Consulted about the possibilities of greater web presence Implementing SEO to establish data feed back targeted at existing and new customer bases
-Signet Interactive                     -  
-My primary role as a web developer at Signet Interactive, my duties included: Develop and create the functional websitesFollowed proper web standards, as well as the user experience for both mobile and desktop in mindVariety of web-related aspects, in regards to maintenance and support
-Freelance Web Development                     -  
-As a freelance web developer, I help smaller clients with a variety of web-related needs including:Site developmentConsulting, general website maintenance & troubleshooting, custom email templatesSocial media Google Apps integration A variety of other website/web-related needs
-San Antonio Water System Via Sistema Technologies                     -  
-The main project worked was a customer portal that handled water bill account needs.Coordinating responsive web development with project leadsAdvised on UX/UI related mattersIntegrated web technologies with legacy systemsExperiential Design
-Payment Data Systems Inc / Usio                     -  
-San Antonio , Texas
-Was main lead front end developer on rebuilding their proprietary financial debit card banking app white label template Akimbo onto a react-native platform.  App requirements included:Used React-Native for all front end Heavy use of Axios for http requestsAnimating visual components with haptic feedback Card to card transfers Bank to card transfersScheduling recurring  transfers (utilizing Moment.js to calculate future dates to pick from) Enrollment Image uploadMaintaining a list of transaction history Ordering new debit cards, enrollmentUsing keychain to store secure login information & touch id biometricsUtilizing environmental files for on boarding clients to utilize their branding for templating purposes   Displaying a live balance of each cardAlso assisted and monitored digital art assets for maintaining consistent brand guidelines (consistent colors on sites, making sure fonts were consistent, using the same border radius on visual components, etc...).
-
-Professional Skills
-HTML
-MongoDB
-Javascript
-React
-React-Native
-Redux
-Axios
-Jquery
-ModX
-Node.js
-Version Control
-UI/UX
-Adobe Photoshop/Illustrator
-npm
-Gulp
-eCommerce
-CSS
-Big Commerce
-Bootstrap
-Flexbox
-CSS Grid
-Formstack
-Social Media Integration
-Campaign Monitor, MailChimp, etc., Custom Email Template creation
-Bitbucket
-Github
-Sourcetree
-Yarn
-Visual Studio
-Git
-Sass
-GraphQL
-Hubspot
-
-Languages
-English: Native
+2009 University of Houston Houston
+Bachelor of Arts  
