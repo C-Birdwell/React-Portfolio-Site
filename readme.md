@@ -8,9 +8,9 @@ The personal site of Colin Birdwell
 
 1. git clone https://github.com/C-Birdwell/React-Portfolio-Site.git - install project
 2. yarn install - install node dependencies
-3. Setup server for devolopment
-   1. yarn start - starts node server (keep this running in a seperate terminal window)
-   2. yarn dev-server - starts enviroment for development (keep this running in a seperate terminal window)
+3. Setup server for development
+   1. yarn start - starts node server (keep this running in a separate terminal window)
+   2. yarn dev-server - starts environment for development (keep this running in a separate terminal window)
 
 ## Extra Scripts
 
