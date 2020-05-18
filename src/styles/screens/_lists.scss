@@ -20,6 +20,7 @@
         display: inline-block;
         align-self: center;
         transition: color 1s;
+        width: 90%;
         @media screen and (max-width: $mobile-break) {
           width: 90%;
           margin: 0 0 15px 0;
@@ -30,6 +31,7 @@
         align-self: center;
         align-items: center;
         padding: 0 10px 10px 0;
+        vertical-align: top;
         @media screen and (max-width: $mobile-break) {
           width: 10%;
           padding: 0 0 0 0;

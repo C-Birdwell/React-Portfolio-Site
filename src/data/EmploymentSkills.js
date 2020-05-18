@@ -35,6 +35,5 @@ Email Template creation`,
   'Sourcetree',
   'Yarn',
   'Visual Studio',
-  'GraphQL',
   'MongoDB',
 ]

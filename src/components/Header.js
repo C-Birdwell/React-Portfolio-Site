@@ -54,7 +54,9 @@ class Header extends React.Component {
         to="/"
         activeClassName="active"
         exact={true}
-        onClick={() => _onUpdateFancyBackground('/')}
+        onClick={() => {
+          _onUpdateFancyBackground('/'), window.scrollTo(0, 0)
+        }}
       >
         <div className="row">
           <div className="col-1 center">
