@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Fade from 'react-reveal/Fade'
+import Jump from 'react-reveal/Jump'
 import { employmentHistory } from '../data'
 import ReactHtmlParser from 'react-html-parser'
 
@@ -19,14 +19,16 @@ class EmploymentPage extends React.Component {
   render() {
     const { windowMode } = this.props
     return (
-      <Fade bottom={windowMode === 'desktop'} delay={100} duration={1500}>
-        <div className="screen-content">
-          <h2>Employment History</h2>
-          {employmentHistory.map((val, i) =>
-            this.renderJobHistoryItem(val.company, val.role, val.date, val.text, i),
-          )}
-        </div>
-      </Fade>
+      <div className="screen-content">
+        <Jump cascade>
+          <div>
+            <h2>Employment History</h2>
+            {employmentHistory.map((val, i) =>
+              this.renderJobHistoryItem(val.company, val.role, val.date, val.text, i),
+            )}
+          </div>
+        </Jump>
+      </div>
     )
   }
 }

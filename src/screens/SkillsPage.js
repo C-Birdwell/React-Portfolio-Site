@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Fade from 'react-reveal/Fade'
+import Jump from 'react-reveal/Jump'
 import { employmentSkills } from '../data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileAlt, faFileWord, faFilePdf } from '@fortawesome/free-solid-svg-icons'
@@ -59,15 +59,17 @@ class SkillsPage extends React.Component {
   render() {
     const { windowMode } = this.props
     return (
-      <Fade bottom={windowMode === 'desktop'} duration={1250}>
-        <div className="screen-content">
-          <h2>
-            Skills <span>&</span> Documents
-          </h2>
-          {this.renderResumeLinks()}
-          {this.renderJobSkills()}
-        </div>
-      </Fade>
+      <div className="screen-content">
+        <Jump cascade>
+          <div>
+            <h2>
+              Skills <span>&</span> Documents
+            </h2>
+            {this.renderResumeLinks()}
+            {this.renderJobSkills()}
+          </div>
+        </Jump>
+      </div>
     )
   }
 }

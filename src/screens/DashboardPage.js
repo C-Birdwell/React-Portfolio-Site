@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Fade from 'react-reveal/Fade'
+import Jump from 'react-reveal/Jump'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneAlt, faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -10,6 +10,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 library.add(fab, faPhoneAlt, faEnvelopeOpenText)
 
 class DashboardPage extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   renderForward() {
     return (
       <div className="forward-content card">
@@ -74,14 +78,16 @@ class DashboardPage extends React.Component {
   render() {
     const { windowMode } = this.props
     return (
-      <Fade bottom={windowMode === 'desktop'} duration={1250}>
-        <div className="screen-content">
-          <h2>Colin Birdwell</h2>
-          {this.renderForward()}
-          {this.renderSummaryContent()}
-          {this.renderContactSummary()}
-        </div>
-      </Fade>
+      <div className="screen-content">
+        <Jump cascade>
+          <div>
+            <h2>Colin Birdwell</h2>
+            {this.renderForward()}
+            {this.renderSummaryContent()}
+            {this.renderContactSummary()}
+          </div>
+        </Jump>
+      </div>
     )
   }
 }

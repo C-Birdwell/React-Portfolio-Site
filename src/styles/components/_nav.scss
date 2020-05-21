@@ -29,6 +29,12 @@
     justify-content: center;
     height: 100%;
   }
+
+  .react-reveal {
+    @media screen and (max-width: $mobile-break) {
+      max-height: 68px;
+    }
+  }
 }
 
 .footer-container .navigation .row {

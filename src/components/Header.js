@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import ReactSVG from 'react-svg'
+import LightSpeed from 'react-reveal/LightSpeed'
+
 import { _onUpdateFancyBackground, _onChangeHeader, _onLayoutSize } from '../actions'
 import Nav from '../components/Nav'
 
@@ -89,7 +91,11 @@ class Header extends React.Component {
           <div className="row">
             {this.renderPhantomColumn()}
             {windowSize >= 530 && this.renderPhantomColumn()}
-            <div className={logoFix}>{this.renderLogo()}</div>
+            <div className={logoFix}>
+              <LightSpeed left delay={1000}>
+                {this.renderLogo()}
+              </LightSpeed>
+            </div>
             {windowLayout && (
               <div className="col-2">
                 <Nav />

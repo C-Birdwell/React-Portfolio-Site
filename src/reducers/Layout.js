@@ -12,7 +12,7 @@ const detectWindowSize = val => {
 }
 
 const createBackgroundGrid = val => {
-  return detectWindowSize(val) === 'desktop' ? 20 : 8
+  return detectWindowSize(val) === 'desktop' ? 18 : 8
 }
 
 export default (state = INITIAL_STATE, action) => {

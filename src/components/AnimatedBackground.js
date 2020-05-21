@@ -21,7 +21,7 @@ class AnimatedBackground extends React.Component {
         value: scaleLowest,
         easing: 'easeInOutQuad',
         duration: duration2,
-        delay: halfTheRow ? (gridNum - i) * 50 : i * 50,
+        delay: halfTheRow ? (gridNum - i) * 75 : i * 75,
       },
       { value: 1.1, easing: 'easeInOutQuad', duration: duration3 },
     ]
@@ -60,7 +60,7 @@ class AnimatedBackground extends React.Component {
     let delayXaxis = 0
 
     for (let i = 1; i <= gridNum; i++) {
-      i < gridNum * 0.5 ? (delayXaxis = (gridNum - i) * 50) : (delayXaxis = i * 50)
+      i < gridNum * 0.5 ? (delayXaxis = (gridNum - i) * 10) : (delayXaxis = i * 10)
       renderBoxGrid.push(this.renderBoxRow(i, delayXaxis))
     }
 
