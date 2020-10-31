@@ -8,8 +8,8 @@ const app = express()
 const publicPath = path.join(__dirname, '..', 'public')
 const port = process.env.PORT || 3000
 
-app.use(sslRedirect)
-app.use(express.static(publicPath))
+//app.use(sslRedirect)
+app.use(express.static(publicPath), sslRedirect)
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'))
