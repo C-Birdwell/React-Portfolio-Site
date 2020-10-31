@@ -3187,11 +3187,6 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
   dependencies:
     homedir-polyfill "^1.0.1"
 
-express-sslify@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/express-sslify/-/express-sslify-1.2.0.tgz#30e84bceed1557eb187672bbe1430a0a2a100d9c"
-  integrity sha1-MOhLzu0VV+sYdnK74UMKCioQDZw=
-
 express@4.15.4:
   version "4.15.4"
   resolved "https://registry.yarnpkg.com/express/-/express-4.15.4.tgz#032e2253489cf8fce02666beca3d11ed7a2daed1"
@@ -4009,11 +4004,6 @@ hash.js@^1.0.0, hash.js@^1.0.3:
   dependencies:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.1"
-
-heroku-ssl-redirect@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/heroku-ssl-redirect/-/heroku-ssl-redirect-0.1.1.tgz#c55d60c0ec4473358ead66c75e8c7e99d9e8a689"
-  integrity sha512-kL/DvLR2J53iB3TXasQlo5JwF/j2L2zkala6Ddk9o6JwIPeDvbTGT9Aty8WElxcF389ObICCeyf2m7RKpCg5Bg==
 
 hey-listen@^1.0.5, hey-listen@^1.0.8:
   version "1.0.8"
@@ -7206,6 +7196,13 @@ react-html-parser@^2.0.2:
   integrity sha512-XeerLwCVjTs3njZcgCOeDUqLgNIt/t+6Jgi5/qPsO/krUWl76kWKXMeVs2LhY2gwM6X378DkhLjur0zUQdpz0g==
   dependencies:
     htmlparser2 "^3.9.0"
+
+react-https-redirect@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-https-redirect/-/react-https-redirect-1.1.0.tgz#6f3c35cc5849d863d398714fcb9f4d125f9e254d"
+  integrity sha512-HWN/Ftgi31W2OAFVNo5BO1n8C9D2W0L+sque20dKuwh51hQuMwK4bMAtdrYAmapfGGh+53zQ1NsrSacVS1Q/mw==
+  dependencies:
+    prop-types "^15.5.8"
 
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.6:
   version "16.8.6"
