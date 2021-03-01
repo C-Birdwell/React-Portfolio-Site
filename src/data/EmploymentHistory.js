@@ -36,6 +36,23 @@ export const employmentHistory = [
     `,
   },
   {
+    company: 'Small Dog Agency',
+    role: 'Contractor Developer',
+    date: 'October 2017 – April 2020',
+    text: `
+    <p>
+    Colin was a front end developer that was contracted out on a contract by contract basis. Colin supported new and existing sites while under NDA. The clientele consisted of small businesses and could range from web development, email templates, and wireframes.
+    </p>
+    <ul>
+      <li><i class="icon-logo"></i><p>Utilized React for websites and apps</p></li>
+      <li><i class="icon-logo"></i><p>Developed flat files for email templates</p></li>
+      <li><i class="icon-logo"></i><p>Utilized Sketch for wireframes</p></li>
+      <li><i class="icon-logo"></i><p>Hubspot, Modx, and Wordpress development and support</p></li>
+      <li><i class="icon-logo"></i><p>Integrated 3rd party API’s into React applications</p></li>
+      <li><i class="icon-logo"></i><p>Created and integrated SVG’s for design purposes</p></li>
+    </ul>`,
+  },
+  {
     company: 'San Antonio Water System Via Sistema Technologies',
     role: 'Web Developer Consultant',
     date: 'January 2017 - February 2018',
